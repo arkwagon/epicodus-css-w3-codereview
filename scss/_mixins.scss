@@ -1,0 +1,30 @@
+@mixin margin($top, $right:null, $bottom:null, $left:null) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+
+
+
+// @mixin padding($padding, $top:null, $right:null, $bottom:null, $left:null) {
+//   padding: $padding;
+//   padding-top: $top;
+//   padding-right: $right;
+//   padding-bottom: $bottom;
+//   padding-left: $left;
+// }
+//
+// @mixin img($height, $width:null, $margin:null) {
+//   height: $height;
+//   width: $width;
+//   margin: $margin
+// }
+//
+// @mixin contentSize($margin, $width, $display:null, $height:null) {
+//   margin: $margin;
+//   width: $width;
+//   display: $display;
+//   height: $height;
+// }

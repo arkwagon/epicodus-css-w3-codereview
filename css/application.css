@@ -1,0 +1,76 @@
+*:not(body):not(html) {
+  box-sizing: border-box;
+  border: 1px dotted red; }
+
+.columns {
+  min-height: 100px; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.mobileHidden {
+  display: none; }
+
+.featuredPosts {
+  padding: 0;
+  margin: 0 auto;
+  overflow: auto; }
+  .featuredPosts .mainPost {
+    margin-bottom: 10px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 50%; }
+    .featuredPosts .mainPost #banana {
+      margin: 0;
+      width: 100%;
+      margin: 0 auto; }
+    .featuredPosts .mainPost .mainPostTitle {
+      position: absolute;
+      top: 30px;
+      left: 20px; }
+    .featuredPosts .mainPost .mainPostHeadline {
+      position: absolute;
+      top: 40px; }
+    .featuredPosts .mainPost .mainPostLink {
+      position: absolute;
+      top: 50px; }
+
+header {
+  overflow: auto;
+  background-color: #FAFAFA;
+  width: 100%;
+  height: 60px;
+  padding: 15px; }
+  header #logo {
+    float: left;
+    width: 120px;
+    border-right: 1px solid #BDBDBD;
+    padding-right: 20px; }
+  header .headerContainer {
+    font-family: sans-serif;
+    color: #BDBDBD; }
+  header .tagline {
+    float: left;
+    padding-top: 9px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 20px; }
+  header .genderAll, header .rss {
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #BDBDBD; }
+    header .genderAll:hover, header .rss:hover {
+      color: #ff7f7f; }
+
+/*# sourceMappingURL=application.css.map */
