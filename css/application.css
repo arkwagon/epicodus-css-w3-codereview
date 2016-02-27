@@ -1,9 +1,8 @@
-*:not(body):not(html) {
-  box-sizing: border-box;
-  border: 1px dotted red; }
-
-.columns {
-  min-height: 100px; }
+#apple, #orange, #rasp, #pom {
+  display: block;
+  margin: 0;
+  width: 100%;
+  margin: 0 auto; }
 
 *,
 *::before,
@@ -18,30 +17,122 @@ body {
 .mobileHidden {
   display: none; }
 
-.featuredPosts {
-  padding: 0;
-  margin: 0 auto;
-  overflow: auto; }
-  .featuredPosts .mainPost {
-    margin-bottom: 10px;
-    float: left;
-    position: relative;
-    overflow: hidden;
-    width: 50%; }
-    .featuredPosts .mainPost #banana {
-      margin: 0;
-      width: 100%;
-      margin: 0 auto; }
-    .featuredPosts .mainPost .mainPostTitle {
+.mainPost {
+  border: 10px solid #FFF;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 50%; }
+  @media screen and (max-width: 1119px) {
+    .mainPost {
+      height: 400px;
+      width: 100%; } }
+  .mainPost .mainPostTexts {
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 40%;
+    padding: 4%;
+    background-color: rgba(239, 2, 255, 0.5); }
+    @media screen and (max-width: 1119px) {
+      .mainPost .mainPostTexts {
+        top: 20%;
+        left: 30%;
+        padding: 1%; } }
+    .mainPost .mainPostTexts .comments {
+      float: right;
+      color: rgba(255, 255, 255, 0.7);
+      font-family: sans-serif; }
+    .mainPost .mainPostTexts .mainPostTitle {
+      position: absolute;
+      top: 15%;
+      color: #D9FF00;
+      font-size: 2em;
+      font-family: sans-serif;
+      padding-bottom: 2%;
+      border-bottom: 1px solid #D9FF00; }
+      @media screen and (max-width: 1119px) {
+        .mainPost .mainPostTexts .mainPostTitle {
+          margin-left: 20px;
+          padding-bottom: 5px; } }
+    .mainPost .mainPostTexts .mainPostHeadline {
+      position: absolute;
+      top: 35%;
+      color: #D9FF00;
+      font-family: sans-serif; }
+      @media screen and (max-width: 1119px) {
+        .mainPost .mainPostTexts .mainPostHeadline {
+          margin-left: 20px;
+          padding-top: 25px; } }
+    .mainPost .mainPostTexts .mainPostLink {
+      position: absolute;
+      top: 55%;
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      font-family: sans-serif; }
+      @media screen and (max-width: 1119px) {
+        .mainPost .mainPostTexts .mainPostLink {
+          margin-left: 20px;
+          padding-top: 30px; } }
+
+.subPost {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 24.5%;
+  border-top: 10px solid #FFF;
+  border-right: 10px solid #FFF;
+  border-bottom: 10px solid #FFF; }
+  .subPost .subPostTexts {
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 40%;
+    padding: 4%;
+    background-color: rgba(239, 2, 255, 0.5); }
+    .subPost .subPostTexts .subPostTitle {
       position: absolute;
       top: 30px;
       left: 20px; }
-    .featuredPosts .mainPost .mainPostHeadline {
+    .subPost .subPostTexts .subPostHeadline {
       position: absolute;
       top: 40px; }
-    .featuredPosts .mainPost .mainPostLink {
+    .subPost .subPostTexts .subPostLink {
       position: absolute;
       top: 50px; }
+
+@media screen and (max-width: 1119px) {
+  #mainPost {
+    width: 100%; } }
+
+@media screen and (max-width: 1119px) {
+  #subPost1 {
+    border-top: none;
+    border-right: none;
+    border-left: 10px solid white;
+    clear: both; } }
+
+@media screen and (max-width: 1119px) {
+  #subPost2 {
+    border-top: none;
+    border-right: none;
+    border-left: 10px solid white; } }
+
+#subPost3 {
+  border-top: none; }
+  @media screen and (max-width: 1119px) {
+    #subPost3 {
+      border-top: none;
+      border-right: none;
+      border-left: 10px solid white; } }
+
+#subPost4 {
+  border-top: none; }
+  @media screen and (max-width: 1119px) {
+    #subPost4 {
+      border-top: none;
+      border-right: none;
+      border-left: 10px solid white; } }
 
 header {
   overflow: auto;
@@ -72,5 +163,30 @@ header {
     color: #BDBDBD; }
     header .genderAll:hover, header .rss:hover {
       color: #ff7f7f; }
+
+#banana {
+  display: block;
+  margin: 0;
+  width: 100%;
+  margin: 0 auto; }
+  #banana:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
+
+#apple:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+#orange:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+#rasp:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+#pom:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 /*# sourceMappingURL=application.css.map */

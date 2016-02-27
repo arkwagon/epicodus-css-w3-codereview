@@ -1,32 +1,137 @@
-.featuredPosts {
-  padding: 0;
-  margin: 0 auto;
-  overflow: auto;
-  // width: 100%;
-  // height: 400px;
-  .mainPost {
-    margin-bottom: 10px;
-    float: left;
-    position: relative;
-    overflow: hidden;
-    width: 50%;
-    #banana {
-      margin: 0;
-      width: 100%;
-      margin: 0 auto;
+.mainPost {
+  border: 10px solid $borderColor;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  @media screen and (max-width: 1119px) {
+    height: 400px;
+    width: 100%;
+  }
+  .mainPostTexts {
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 40%;
+    padding: 4%;
+    background-color: rgba(239, 2, 255, .5);
+    @media screen and (max-width: 1119px) {
+      top: 20%;
+      left: 30%;
+      padding: 1%;
+    }
+    .comments {
+      float: right;
+      color: rgba(255, 255, 255, .7);
+      font-family: sans-serif;
+
     }
     .mainPostTitle {
+      position: absolute;
+      top: 15%;
+      color: #D9FF00;
+      font-size: 2em;
+      font-family: sans-serif;
+      padding-bottom: 2%;
+      border-bottom: 1px solid #D9FF00;
+      @media screen and (max-width: 1119px) {
+        margin-left: 20px;
+        padding-bottom: 5px;
+      }
+    }
+    .mainPostHeadline {
+      position: absolute;
+      top: 35%;
+      color: #D9FF00;
+      font-family: sans-serif;
+      @media screen and (max-width: 1119px) {
+        margin-left: 20px;
+        padding-top: 25px;
+      }
+    }
+    .mainPostLink {
+      position: absolute;
+      top: 55%;
+      color: rgba(255, 255, 255, .7);
+      text-decoration: none;
+      font-family: sans-serif;
+      @media screen and (max-width: 1119px) {
+        margin-left: 20px;
+        padding-top: 30px;
+      }
+    }
+  }
+
+}
+
+.subPost {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 24.5%;
+  border-top: 10px solid $borderColor;
+  border-right: 10px solid $borderColor;
+  border-bottom: 10px solid $borderColor;
+  .subPostTexts {
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 40%;
+    padding: 4%;
+    background-color: rgba(239, 2, 255, .5);
+    .subPostTitle {
       position: absolute;
       top: 30px;
       left: 20px;
     }
-    .mainPostHeadline {
+    .subPostHeadline {
       position: absolute;
       top: 40px;
     }
-    .mainPostLink {
+    .subPostLink {
       position: absolute;
       top: 50px;
     }
+  }
+}
+
+#mainPost {
+  @media screen and (max-width: 1119px) {
+    width: 100%
+  }
+}
+
+#subPost1 {
+  @media screen and (max-width: 1119px) {
+    border-top: none;
+    border-right: none;
+    border-left: 10px solid white;
+    clear: both;
+  }
+}
+
+#subPost2 {
+  @media screen and (max-width: 1119px) {
+    border-top: none;
+    border-right: none;
+    border-left: 10px solid white;
+  }
+}
+
+#subPost3 {
+  border-top: none;
+  @media screen and (max-width: 1119px) {
+    border-top: none;
+    border-right: none;
+    border-left: 10px solid white;
+  }
+}
+
+#subPost4 {
+  border-top: none;
+  @media screen and (max-width: 1119px) {
+    border-top: none;
+    border-right: none;
+    border-left: 10px solid white;
   }
 }

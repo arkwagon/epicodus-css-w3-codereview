@@ -1,7 +1,40 @@
 #banana {
-  
+  display: block;
+  margin: 0;
+  width: 100%;
+  margin: 0 auto;
+  &:hover {
+    @include filter(grayscale(100%));
+  }
 }
 
+#apple {
+  @extend %imageInPost;
+  &:hover {
+    @include filter(grayscale(100%));
+  }
+}
+
+#orange {
+  @extend %imageInPost;
+  &:hover {
+    @include filter(grayscale(100%));
+  }
+}
+
+#rasp {
+  @extend %imageInPost;
+  &:hover {
+    @include filter(grayscale(100%));
+  }
+}
+
+#pom {
+  @extend %imageInPost;
+  &:hover {
+    @include filter(grayscale(100%));
+  }
+}
 
 
 
