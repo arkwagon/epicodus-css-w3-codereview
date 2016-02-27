@@ -5,6 +5,7 @@
   margin: 0 auto;
   &:hover {
     @include filter(grayscale(100%));
+    cursor: pointer;
   }
 }
 
@@ -12,6 +13,7 @@
   @extend %imageInPost;
   &:hover {
     @include filter(grayscale(100%));
+    cursor: pointer;
   }
 }
 
@@ -19,6 +21,7 @@
   @extend %imageInPost;
   &:hover {
     @include filter(grayscale(100%));
+    cursor: pointer;
   }
 }
 
@@ -26,6 +29,7 @@
   @extend %imageInPost;
   &:hover {
     @include filter(grayscale(100%));
+    cursor: pointer;
   }
 }
 
@@ -33,6 +37,7 @@
   @extend %imageInPost;
   &:hover {
     @include filter(grayscale(100%));
+    cursor: pointer;
   }
 }
 

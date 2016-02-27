@@ -85,21 +85,34 @@ body {
   border-bottom: 10px solid #FFF; }
   .subPost .subPostTexts {
     position: absolute;
-    top: 50%;
-    width: 40%;
-    height: 40%;
+    top: 70%;
+    width: 100%;
+    height: 30%;
     padding: 4%;
-    background-color: rgba(239, 2, 255, 0.5); }
+    background-color: rgba(0, 0, 0, 0.5); }
+    .subPost .subPostTexts .subPostComments {
+      float: right;
+      color: rgba(255, 255, 255, 0.7);
+      font-family: sans-serif; }
     .subPost .subPostTexts .subPostTitle {
       position: absolute;
-      top: 30px;
-      left: 20px; }
+      top: 25%;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1.5em;
+      font-family: sans-serif;
+      padding-bottom: 2%; }
     .subPost .subPostTexts .subPostHeadline {
       position: absolute;
-      top: 40px; }
+      top: 55%;
+      color: rgba(255, 255, 255, 0.7);
+      font-family: sans-serif; }
     .subPost .subPostTexts .subPostLink {
-      position: absolute;
-      top: 50px; }
+      float: right;
+      padding-right: 2%;
+      top: 55%;
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      font-family: sans-serif; }
 
 @media screen and (max-width: 1119px) {
   #mainPost {
@@ -171,22 +184,27 @@ header {
   margin: 0 auto; }
   #banana:hover {
     -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); }
+    filter: grayscale(100%);
+    cursor: pointer; }
 
 #apple:hover {
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
+  filter: grayscale(100%);
+  cursor: pointer; }
 
 #orange:hover {
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
+  filter: grayscale(100%);
+  cursor: pointer; }
 
 #rasp:hover {
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
+  filter: grayscale(100%);
+  cursor: pointer; }
 
 #pom:hover {
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
+  filter: grayscale(100%);
+  cursor: pointer; }
 
 /*# sourceMappingURL=application.css.map */
